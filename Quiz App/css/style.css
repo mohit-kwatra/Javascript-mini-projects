@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(to right,#000039,blue,#0984e3); 
+}
+
+.container {
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-box {
+    width: 25%;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px 0px;
+    text-align: center;
+    box-shadow: 2px 0px 3px rgba(0, 0,0, 0.3),-2px 0px 3px rgba(0, 0,0, 0.3),0px 3px 3px rgba(0, 0,0, 0.3),0px -2px 3px rgba(0, 0,0, 0.3);
+    position: relative;
+    animation: quiz-box .9s linear;
+}
+
+@keyframes quiz-box {
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 10px 0px 30px 0px;
+}
+
+.fa {
+    font-size: 40px;
+    margin: 20px 0px;
+    color: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,1),rgba(255,255,255,0.7));
+}
+
+.user-name {
+    background: none;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0,0.2);
+    border-radius: 10px;
+    margin: 15px 0px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.button-box {
+    text-align: center;
+}
+
+.start-button {
+    background: none;
+    border: none;
+    outline: none;
+    background-color: white;
+    /* background-image: linear-gradient(to right,#0984e3,blue,#0984e3);  */
+    color: black;
+    padding: 10px 30px;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px auto;
+    backface-visibility: hidden;
+    transition: all 0.3s;
+}
+
+.start-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0,0.3);
+}
+
+.start-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0,0.3);
+}
