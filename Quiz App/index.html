@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz App</title>
-
-    <!--   include stylesheet   -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/all.css">
-    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 </head>
-
 <body>
     <div class="container">
         <div class="quiz-box">
             <h2 class="heading">Quiz App</h2>
-            <i class="fa fa-lightbulb" aria-hidden="true"></i> <br>
+            <div class="icon-container" style="text-align: center;">
+                <i class="fa-solid fa-lightbulb" style="font-size: 50px;"></i>
+            </div> 
             <input type="text" name="user-name" class="user-name" placeholder="Your Name" autocomplete="off" required> <br>
             <div class="buttton-box">
                 <input type="button" value="Start Quiz" class="start-button">
             </div>
         </div>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 
